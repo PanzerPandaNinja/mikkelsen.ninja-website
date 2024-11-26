@@ -1,25 +1,343 @@
 <!DOCTYPE html>
-<html lang="no">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mikkelsen</title>
+    <title>PanzerPandaNinja</title>
+    <link rel="icon" href="pentagramBurningInOil.png" type="image/x-icon">
+</head>
+
+<body>
+    
     <style>
         body {
             background-color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
+            color: orange;
+            font-family: 'lora';
         }
+
+        h1 { 
+            margin-top: 20px; 
+            width: 600px;
+            text-align: left;
+            text-shadow: 3px 3px 10px red;
+        }
+
+        h2 {
+            margin-top: 20px;
+            text-shadow: 2px 2px 8px red;
+        }
+
+        h3 {
+            margin-top: 20px;
+            text-shadow: 1px 1px 5px red;
+        }
+
+        p {
+            margin-bottom: 10px;
+            max-width: 600px;
+        }
+
+        img {
+            max-width: 600;
+            height: auto;
+        }
+
         video {
             max-width: 100%;
             height: auto;
         }
+        a {
+            color: orange;
+        }
+
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+         }
+
+        .container > div {
+            flex-basis: 100%;
+            
+        }
+
+        @media (min-width: 1315px) {
+        .container > div {
+            flex-basis: 50%;
+            max-width: 600px;
+            min-width: 600px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border: 1px solid orange;   
+            }
+            h1 {
+                width: 1315px; 
+                text-align: center; 
+            }
+        }
+
+        @media (min-width: 1960px) {
+        .container > div {
+            flex-basis: 30%;
+            max-width: 600px;
+            }
+            h1 {
+                width: 1960px; 
+                text-align: center; 
+            }
+        }
+
+        @media (min-width: 2500px) {
+        .container > div {
+            flex-basis: 20%;
+            max-width: 600px;
+            }
+            h1 {
+                width: 2500px; 
+                text-align: center; 
+            }
+        }
     </style>
-</head>
-<body>
-    <video src="panzerpandaLogo.mp4" autoplay loop muted></video>
-</body>
-</html>
+
+
+
+    <h1>Welcome, please stay as long as you want!</h1>
+
+    <div class="container">
+        
+        <div>
+            <a href="https://github.com/PanzerPandaNinja/">My Github page</a><br>
+            <a href="https://creator.nightcafe.studio/u/PanzerPanda">My Nightcafe page</a><br>
+            <img src = "MakePic/skullOnTable.jpg" alt="skullOnTable" width="290">
+            <img src="MakePic/rainbowSquirrel.jpg" alt="rainbowSquirrel" width="290">
+
+            <h2>Here's some of my projects</h2>
+            <a href="#pentaclock">Pentaclock</a><br>
+            <a href="#syklon">Syklon 1.0 vacuum adapter</a><br>
+            <a href="#rostock">Rostock 3D printer</a><br>
+            <a href="#rimfakse">Rimfakse - the autonomos racing car</a><br>
+            <a href="#dicetower">Dicetower</a><br>
+            <a href="#iot-button">IoT Button</a><br>
+            <a href="#duck-mover">Duck Mover</a><br>
+            <a href="#lollibot">LolliBot</a><br>
+            <a href="#photoboothBox">Photobooth Box</a><br>
+            <a href="#lightTower">Light Tower</a><br>
+            <a href="#firstWireGame">First Wire Game</a><br>
+            <a href="#secondWireGame">Second Wire Game</a><br>
+            <a href="#creeper">Creeper</a><br>
+            <a href="#garageOpener">Garage Opener</a><br>
+            <a href="#tentacleMold">Tentacle Mold</a><br>
+
+        </div>
+    
+        <div>
+            <h3>Mobile Player Unknown Battle ground</h3>
+            <p>Mobile PUBG is a game where you play PUBG on your phone/tablet. I compiled a video of some of my higlights.</p><br>
+            <video controls autoplay width="600" height="400">
+                <source src="MobilePUBG/mPUBG.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+        
+        </div>
+
+
+        <div>
+            <h3 id="pentaclock">Pentaclock</h3>
+            <p>It's a binary pentagram clock, loosely inspired by the <a href="https://www.atlasobscura.com/places/mengenlehreuhr">Mengenlehreuhr</a><br>
+            Available for viewing at <a href="https://pentaclock.art">https://pentaclock.art</a><br>
+            You can also view the source code at <a href="https://github.com/PanzerPandaNinja/Pentaclock">Github</a>.    
+            </p>
+            <iframe src="https://pentaclock.art" width="600" height="600"></iframe>
+        </div>
+    
+        <div>
+            <h3 id="rimfakse">Rimfakse - the autonomos racing car</h3>
+            <p>Rimfakse is named after a mythical horse from Norse mythology. It is an autonomos car competing in robotic Folkrace.</p><br>
+            <p>Here is a picture of Rimfakse:</p>
+            <a href="MakePic/Rimfakse.jpg" target="_blank">
+               <img src="MakePic/Rimfakse.jpg" alt="Rimfakse Image" width="600">
+            </a>
+            <p>Here is another picture of Rimfakse in the nude:</p>
+            <a href="MakePic/Rimfakse_nude.jpg" target="_blank">
+                <img src="MakePic/Rimfakse_nude.jpg" alt="Rimfakse Image 2" width="600">
+            </a> 
+
+        </div>
+
+        <div>
+            <h3 id="duck-mover">Duck Mover</h3>
+            <p>The Duck Mover is a robotic device for rubberducking, also a test of rotary encoder.</p><br>
+            <p>Here is an image of the Duck Mover:</p>
+            <a href="MakePic/duckMover (1).jpg" target="_blank">
+                <img src="MakePic/duckMover (1).jpg" alt="Duck Mover Image" width="600">
+            </a>
+            <p>Here is another image of the Duck Mover:</p>
+            <a href="MakePic/duckMover (2).jpg" target="_blank">
+                <img src="MakePic/duckMover (2).jpg" alt="Duck Mover Image" width="600">
+            </a>
+        </div>
+
+        <div>
+            <h3 id="rostock">Rostock 3D printer</h3>
+            <p>I made a 3D printer based on the Rostock 3D printer using Kreatures recepie and guidance.</p><br>
+            <a href="MakePic/Rostock3Dprinter.jpg" target="_blank">
+                <img src="MakePic/Rostock3Dprinter.jpg" alt="Rostock3Dprinter Image" width="600">
+            </a>
+            <p>The electronics underneath is a RAMPS 1.4 board with an Arduino Mega 2560. The firmware is repetier.</p>
+            <a href="MakePic/Rostock3Dprinter_underside.jpg" target="_blank">
+                <img src="MakePic/Rostock3Dprinter_underside.jpg" alt="Rostock3Dprinter Image" width="600">
+            </a>
+        </div>
+
+        <div>
+
+            <h3 id="dicetower">Dicetower</h3>
+            <p>The Dicetower is a gaming accessory used to roll dice in a controlled manner. It helps prevent dice from falling off the table and provides a fair and random roll. This is cut and engraved with a lazercutter.</p><br>
+            <a href="MakePic/DiceTower (1).jpg" target="_blank">
+                <img src="MakePic/DiceTower (1).jpg" alt="Dicetower Image" width="600">
+            </a>
+            <p>Here with open drawer:</p>    
+            <a href="MakePic/DiceTower (2).jpg" target="_blank">
+                <img src="MakePic/DiceTower (2).jpg" alt="Dicetower Image" width="600">
+            </a> 
+        </div>
+
+        <div>
+            <h3 id="syklon">Syklon 1.0 vacuum adapter</h3>
+            <p>This is a syclone vacuum adapter I made for my home. You attach the vacuummachine to the top and the hose to the side. Then put a plastic bag on the bottom to catch the dirt.</p><br>
+            <p>Here it is ready befor paining:</p><br>
+            <a href="MakePic/syklonMaking.jpg" target="_blank">
+                <img src="MakePic/syklonMaking.jpg" alt="Making Syklon Image" width="600">
+            </a>
+            <p>Here it is painted:</p>
+            <a href="MakePic/syklonPainted.jpg" target="_blank">
+                <img src="MakePic/syklonPainted.jpg" alt="Painted Syklon Image" width="600">            
+            </a>
+        </div>
+
+        <div>
+            <h3 id="iot-button">IoT Button</h3>
+            <p>The IoT Button is a programmable button that can trigger actions in your connected devices or services. It can be used for various purposes such as home automation, notifications, and more.</p><br>
+            <p>Here is an image of the IoT Button:</p>
+            <a href="MakePic/IOTButton.jpg" target="_blank">
+               <img src="MakePic/IOTButton.jpg" alt="IoT Button Image" width="600">
+            </a>
+            <p>Here is another image of the IoT Button:</p>
+            <a href="MakePic/IOTButton2.jpg" target="_blank">
+                <img src="MakePic/IOTButton2.jpg" alt="IoT Button Image" width="600">
+            </a>
+        </div>
+
+        <div>
+            <h3 id="lollibot">LolliBot</h3>
+            <p>LolliBot is a small robot designed to dispense lollipops. It uses a robotic arm to pick up lollipops from a stand and deliver them to users. I made this with Anders for a makerfaire in Oslo and gave away 3Kg of lollipots over two days. Very popular.</p><br>
+            <p>Here is an image of LolliBot:</p>
+            <a href="MakePic/LolliBot.jpg" target="_blank">
+            <img src="MakePic/LolliBot.jpg" alt="LolliBot Image" width="600">
+            </a>
+            <p>Here is another image of LolliBot in action:</p>
+            <a href="MakePic/LolliBot2.jpg" target="_blank">
+                <img src="MakePic/LolliBot2.jpg" alt="LolliBot Image 2" width="600">
+            </a>
+        </div>
+
+        <div>
+            <h3 id="photoboothBox">Photobooth Box</h3>
+            <p>The Photobooth Box is a portable photo booth that allows users to take fun and memorable pictures at events. It is equipped with a camera, lighting, and props to enhance the photo-taking experience.</p><br>
+            <p>Here is an image of the Photobooth Box:</p>
+            <a href="MakePic/photoboothBox.jpg" target="_blank">
+               <img src="MakePic/photoboothBox.jpg" alt="Photobooth Box Image" width="600">
+            </a>
+            <p>Here is another image of the Photobooth Box:</p>
+            <a href="MakePic/photoboothBox2.jpg" target="_blank">
+                <img src="MakePic/photoboothBox2.jpg" alt="Photobooth Box Image" width="600">
+            </a>
+        </div>
+
+        <div>
+            <h3 id="lightTower">Light Tower</h3>
+            <p>The Light Tower is a tall structure equipped with lights that are used for signaling business status for the person at a desk in a open office landscape. It connects to an MQTT-queue online.</p><br>
+            <p>Here is an image of the Light Tower:</p>
+            <a href="MakePic/lightTower.jpg" target="_blank">
+                <img src="MakePic/lightTower.jpg" alt="Light Tower Image" width="600">
+            </a>
+            <p>Here is another image of the Light Tower:</p>
+            <a href="MakePic/lightTower2.jpg" target="_blank">
+                <img src="MakePic/lightTower2.jpg" alt="Light Tower Image 2" width="600">
+            </a>
+        </div>
+
+        <div>
+            <h3 id="firstWireGame">First Wire Game</h3>
+            <p>The First Wire Game is a puzzle game where players have to complete the track without touching the path. This was my first attemt. </p><br>
+            <p>Here is an image of the First Wire Game:</p>
+            <a href="MakePic/firstWireGame.jpg" target="_blank">
+                <img src="MakePic/firstWireGame.jpg" alt="First Wire Game Image" width="600">
+            </a>
+            <p>Here is another image of the First Wire Game:</p>
+            <a href="MakePic/firstWireGame2.jpg" target="_blank">
+                <img src="MakePic/firstWireGame2.jpg" alt="First Wire Game Image 2" width="600">
+            </a>
+        </div>
+
+        <div>
+            <h3 id="secondWireGame">Second Wire Game</h3>
+            <p>The Second Wire Game is a puzzle game where players have to complete the track without touching the path. This was my second attemt. Frank helped in the making and did the coding on the server for the GUI. We made this for NDC at work. </p><br>
+            <p>Here is an image of the Second Wire Game:</p>
+            <a href="MakePic/secondWireGame.jpg" target="_blank">
+                <img src="MakePic/secondWireGame.jpg" alt="Second Wire Game Image" width="600">
+            </a>
+            <p>Here is another image of the Second Wire Game:</p>
+            <a href="MakePic/secondWireGame2.jpg" target="_blank">
+                <img src="MakePic/secondWireGame2.jpg" alt="Second Wire Game Image 2" width="600">
+            </a>
+            <p>Second Wire Game in use:</p>
+            <a href="MakePic/secondWireGame3.jpg" target="_blank">
+                <img src="MakePic/secondWireGame3.jpg" alt="Second Wire Game Image 2" width="600">
+            </a>
+        </div>    
+
+        <div>
+            <h3 id="creeper">Creeper</h3>
+            <p>The Creeper is a fictional character from the game Minecraft. It is a hostile mob that explodes when it gets close to the player. The Creeper has become an iconic symbol of the game. It is made of two laser cut boxes, "fur", microcontroller and a servo.</p><br>
+            <p>Here is an image of the Creeper:</p>
+            <a href="MakePic/Creeper1.jpg" target="_blank">
+                <img src="MakePic/Creeper1.jpg" alt="Creeper Image" width="600">
+            </a>
+            <p>Here is another image of the Creeper:</p>
+            <a href="MakePic/Creeper2.jpg" target="_blank">
+                <img src="MakePic/Creeper2.jpg" alt="Creeper Image 2" width="600">
+            </a>
+        </div>
+
+        <div>
+            <h3 id="garageOpener">Garage Opener</h3>
+            <p>The Garage Opener is a device that allows users to remotely open and close their garage doors. It is controlled through a mobile app and can also be integrated with smart home systems.</p><br>
+            <p>Here is an image of the Garage Opener:</p>
+            <a href="MakePic/garageOpener1.jpg" target="_blank">
+                <img src="MakePic/garageOpener1.jpg" alt="Garage Opener Image" width="600">
+            </a>
+            <p>Here is another image of the Garage Opener:</p>
+            <a href="MakePic/garageOpener2.jpg" target="_blank">
+                <img src="MakePic/garageOpener2.jpg" alt="Garage Opener Image 2" width="600">
+            </a>
+        </div>
+
+        <div>
+            <h3 id="tentacleMold">Tentacle Mold</h3>
+            <p>The Tentacle Mold is a silicone mold used to create realistic tentacle-shaped objects. It is commonly used in arts and crafts projects, cosplay, and special effects makeup.</p><br>
+            <p>Here is an image of the Tentacle Mold:</p>
+            <a href="MakePic/tentacleMold1.jpg" target="_blank">
+                <img src="MakePic/tentacleMold1.jpg" alt="Tentacle Mold Image" width="600">
+            </a>
+            <p>Here is another image of the Tentacle Mold:</p>
+            <a href="MakePic/tentacleMold2.jpg" target="_blank">
+                <img src="MakePic/tentacleMold2.jpg" alt="Tentacle Mold Image 2" width="600">
+            </a>
+        </div>
+
+    </div>
+    
+    </body>
+    </html>
